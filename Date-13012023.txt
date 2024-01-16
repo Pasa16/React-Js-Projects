@@ -1,0 +1,53 @@
+Date-13/01/2023
+
+Components-Componenets are independent and reusable bits of code.They serve same purpose as javascript functions, but work in isolation and return HTML.
+
+Syntax- function Component(){
+return(
+<div>Component</div>
+)
+}
+
+export default Component
+
+*if you want functional component,the first letter is upper case like C in component.
+
+JSX- It allows to write HTML in React.JSX makes it easier to wri   te and add HTML in React.
+1.it mush have a single parent.
+2.close all your tags in react       js.like also in img and other non-closing tags in html.otherwise it give error.
+3.Insted of writting class write className.
+4.in palce of label attribute for,we will use htmlFor as for is used for loops in js.
+
+*add .js/.jsx as extension for creating file name in folder.
+
+React Fragment-to use a single parent<></>
+
+Expresssions in JSX-With JSX you can write expressions inside a curly braces.The expression can be a React variable,or property,or any other valid Javscript expression JSX will execute the expression and return the result.
+
+Lists- In react, you will render lists with some type of loop.The javascript map() array method is generally the preferred method.
+
+*use key like Math.Random().
+
+Props/Properties-Props are arguments passed into React components.
+Props are passed to components via HTML attributes.
+
+Conditional Rendering-Conditional rendering in React works the same way conditions work in javascript.Use Javascript operators like if or the conditional operator to create elements representing the current state and let React update the UI to match them.
+
+Ways to style:
+1.use style with double curly braces for inline
+2.make a seperate obj and use it as attribute in element for inline css
+3.make a seperate file with .css extension,dont forget to import it first
+
+State-The state is a built in React object that is used to contain data or information about the component.A component's state can change over a time;whenever it changes,the component re-renders. 
+
+About HOOKS-Hooks are a new addition in React 16.8.They let you use state and other React features without writing a class.
+
+*useState()-The React useState Hook allows us to track state in a function component.state generally refers to data or properties that need to be tracking in an application. 
+
+useEffect()- The useEffect Hook allows you to perform side effects in your components.Some examples of side effects are:fetching data,directly updating the DOM.
+
+useContext()-React context is a way to manage state globally.it can be used together with the useState hook to share state between deeply nested components more easily than useState alone.
+
+useReducer()-useReducer is a hook in React that is similar to useState,but it is designed for more complex state objects or state transition that involve multiple sub-values.it allows ypu to manage state in a functional, immutable way.(not used much, redux is useful for state management)
+
+useRef()-useRef is a hook in React that allows you to access the properties of a DOM element.it is useful when you need to access the value of an element,or the current dimensions of an element.
